@@ -8,7 +8,7 @@ import androidx.room.RoomDatabase
     entities = [
         DaoCrypto.CoinGecko::class
     ],
-    version = 1
+    version = 2
 )
 
 abstract class AppDataBase: RoomDatabase() {
