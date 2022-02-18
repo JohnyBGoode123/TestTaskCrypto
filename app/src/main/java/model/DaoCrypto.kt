@@ -2,6 +2,7 @@ package model
 
 
 import androidx.room.*
+import model.dbModels.CryptoModel
 
 @Dao
 abstract class DaoCrypto {
@@ -14,8 +15,8 @@ abstract class DaoCrypto {
     @Entity
     data class CoinGecko(
         @PrimaryKey
-         val id: String,
-         val value: Double
-    )
+        override val id: String,
+        override val value: Double
+    ): CryptoModel
 
 }

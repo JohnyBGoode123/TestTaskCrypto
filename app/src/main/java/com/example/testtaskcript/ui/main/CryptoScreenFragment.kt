@@ -8,13 +8,13 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.testtaskcript.R
 
-class MainFragment : Fragment() {
+class CryptoScreenFragment : Fragment() {
 
     companion object {
-        fun newInstance() = MainFragment()
+        fun newInstance() = CryptoScreenFragment()
     }
 
-    private lateinit var viewModel: MainViewModel
+    private lateinit var viewModel: CryptoScreenViewModel
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View {
@@ -23,7 +23,7 @@ class MainFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
+        viewModel = ViewModelProvider(this).get(CryptoScreenViewModel::class.java)
         // TODO: Use the ViewModel
     }
 
