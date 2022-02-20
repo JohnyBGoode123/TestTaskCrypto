@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">TestTaskCript</string>
+    <string name="buttonShowName">Show</string>
+    <string name="buttonParseName">Parse</string>
 </resources>
